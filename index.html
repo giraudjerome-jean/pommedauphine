@@ -3,14 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pomme Dauphine · La dauphine de la baie de Saint-Jean-de-Luz</title>
-<meta name="description" content="Pomme, la jeune dauphine installée dans la baie de Saint-Jean-de-Luz depuis l'automne 2025 : qui elle est, comment l'observer sans la déranger, et la marque luzienne qui lui rend hommage.">
+<title>Dauphin de Saint-Jean-de-Luz : Pomme, la dauphine de la baie</title>
+<meta name="description" content="Le dauphin de Saint-Jean-de-Luz est une jeune femelle grand dauphin, Pomme. Qui elle est, ses dernières nouvelles et comment l'observer sans la déranger.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pommedauphine.fr/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Pomme Dauphine">
 <meta property="og:url" content="https://pommedauphine.fr/">
-<meta property="og:title" content="Pomme Dauphine · La dauphine de la baie de Saint-Jean-de-Luz">
-<meta property="og:description" content="Pomme, la jeune dauphine de la baie de Saint-Jean-de-Luz, et la marque luzienne qui lui rend hommage. Premières pièces bientôt.">
+<meta property="og:title" content="Pomme, le dauphin de la baie de Saint-Jean-de-Luz">
+<meta property="og:description" content="Une jeune femelle grand dauphin vit dans la baie de Saint-Jean-de-Luz et Ciboure depuis l'automne 2025. Qui elle est, ses nouvelles, les règles pour l'observer.">
+<meta property="og:image" content="https://pommedauphine.fr/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pomme Dauphine, Saint-Jean-de-Luz : logo et illustration d'un dauphin dans la baie">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F4EBDC">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23586DAD'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23F4EBDC'%3EP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +26,59 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Pomme Dauphine",
-  "url": "https://pommedauphine.fr/",
-  "email": "contact@pommedauphine.fr",
-  "address": {"@type": "PostalAddress", "addressLocality": "Saint-Jean-de-Luz", "addressCountry": "FR"}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://pommedauphine.fr/#marque",
+      "name": "Pomme Dauphine",
+      "url": "https://pommedauphine.fr/",
+      "logo": "https://pommedauphine.fr/logo.png",
+      "image": "https://pommedauphine.fr/partage.jpg",
+      "email": "contact@pommedauphine.fr",
+      "sameAs": ["https://www.instagram.com/pomme_dauphine_officiel/"],
+      "address": {"@type": "PostalAddress", "addressLocality": "Saint-Jean-de-Luz", "postalCode": "64500", "addressCountry": "FR"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pommedauphine.fr/#site",
+      "url": "https://pommedauphine.fr/",
+      "name": "Pomme Dauphine",
+      "inLanguage": "fr-FR",
+      "publisher": {"@id": "https://pommedauphine.fr/#marque"}
+    },
+    {
+      "@type": ["WebPage", "FAQPage"],
+      "@id": "https://pommedauphine.fr/#page",
+      "url": "https://pommedauphine.fr/",
+      "name": "Dauphin de Saint-Jean-de-Luz : Pomme, la dauphine de la baie",
+      "inLanguage": "fr-FR",
+      "isPartOf": {"@id": "https://pommedauphine.fr/#site"},
+      "primaryImageOfPage": "https://pommedauphine.fr/partage.jpg",
+      "dateModified": "2026-11-24",
+      "about": {
+        "@type": "Thing",
+        "name": "Pomme, grand dauphin (Tursiops truncatus) de la baie de Saint-Jean-de-Luz",
+        "description": "Jeune femelle grand dauphin installée dans la baie de Saint-Jean-de-Luz et Ciboure depuis l'automne 2025."
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Baie de Saint-Jean-de-Luz et Ciboure",
+        "geo": {"@type": "GeoCoordinates", "latitude": 43.3889, "longitude": -1.6658}
+      },
+      "mainEntity": [
+        {"@type": "Question", "name": "Y a-t-il un dauphin à Saint-Jean-de-Luz ?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Oui. Depuis l'automne 2025, une jeune femelle grand dauphin surnommée Pomme vit dans la baie de Saint-Jean-de-Luz et Ciboure."}},
+        {"@type": "Question", "name": "Le dauphin de Saint-Jean-de-Luz est-il un mâle ou une femelle ?",
+         "acceptedAnswer": {"@type": "Answer", "text": "C'est une jeune femelle de 5 à 8 ans, pas encore adulte, d'où son surnom de dauphine de Saint-Jean-de-Luz."}},
+        {"@type": "Question", "name": "Peut-on nager avec le dauphin de Saint-Jean-de-Luz ?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Non. Le grand dauphin est une espèce protégée : il est interdit de nager avec lui, de le toucher ou de s'en approcher à moins de 100 mètres. L'amende peut atteindre 750 € pour un particulier."}},
+        {"@type": "Question", "name": "Le dauphin de la baie est-il malade ?",
+         "acceptedAnswer": {"@type": "Answer", "text": "En novembre 2026, un abcès est apparu sur son flanc droit. Il s'est ouvert le 16 novembre, et son comportement ne montre pas de signe d'affaiblissement. Elle est surveillée chaque jour."}},
+        {"@type": "Question", "name": "Qui contacter si le dauphin semble en difficulté ?",
+         "acceptedAnswer": {"@type": "Answer", "text": "La mairie de Saint-Jean-de-Luz, qui assure son suivi avec l'observatoire Pelagis : 05 59 51 61 71."}}
+      ]
+    }
+  ]
 }
 </script>
 <style>
@@ -40,66 +95,117 @@
   body{margin:0;background:var(--fond);color:var(--encre);font-family:var(--police);font-size:18px;line-height:1.6}
   .page{max-width:680px;margin:0 auto;padding:56px 24px 40px}
   .lieu{margin:0 0 48px;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-douce)}
-  h1{margin:0;line-height:0}
-  h1 img{display:block;width:100%;max-width:560px;height:auto}
-  .chapo{margin:56px 0 0;font-size:22px;line-height:1.45;font-weight:500;max-width:30ch}
+  .logo{margin:0;line-height:0}
+  .logo img{display:block;width:100%;max-width:560px;height:auto}
+  h1{margin:56px 0 0;font-size:22px;line-height:1.45;font-weight:500;max-width:30ch}
+  .intro{margin:16px 0 0;max-width:36ch}
   .illustration{margin:48px 0 56px}
   .illustration img{display:block;width:100%;max-width:480px;height:auto}
   h2{margin:0 0 12px;font-size:26px;line-height:1.2;font-weight:800}
+  h3{margin:28px 0 6px;font-size:19px;line-height:1.3;font-weight:800}
   section+section{margin-top:48px}
   p{margin:0 0 14px}
   ul{margin:0 0 14px;padding-left:1.2em}
   li{margin-bottom:6px}
+  a{color:inherit}
+  .date{font-size:15px;color:var(--encre-douce)}
   .bouton{display:inline-block;margin-top:8px;padding:14px 24px;min-height:48px;border-radius:999px;background:var(--encre);color:var(--fond);font-weight:800;text-decoration:none}
   .bouton:hover,.bouton:focus-visible{background:#2F3F73}
   .bouton:focus-visible{outline:3px solid var(--encre);outline-offset:3px}
   .adresse{font-size:15px;color:var(--encre-douce)}
+  .sources{font-size:15px;color:var(--encre-douce)}
+  .sources h2{font-size:18px}
   footer{margin-top:72px;padding-top:24px;border-top:2px solid var(--encre);font-size:14px;color:var(--encre-douce)}
-  footer a{color:inherit}
   details summary{cursor:pointer;font-weight:500;color:var(--encre)}
   details p{margin:10px 0 0}
 </style>
 </head>
 <body>
 <main class="page">
-  <p class="lieu">Saint-Jean-de-Luz · Donibane Lohizune</p>
+  <p class="lieu">Saint-Jean-de-Luz · Ciboure · Donibane Lohizune</p>
 
   <header>
-    <h1><img src="logo.png" width="1200" height="811" alt="Pomme Dauphine, Saint-Jean-de-Luz"></h1>
-    <p class="chapo">Une petite marque née à Saint-Jean-de-Luz, autour de la dauphine de la baie. Premières pièces bientôt.</p>
+    <p class="logo">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" width="1200" height="811" alt="Pomme Dauphine, Saint-Jean-de-Luz" fetchpriority="high">
+      </picture>
+    </p>
+    <h1>Pomme, le dauphin de la baie de Saint-Jean-de-Luz</h1>
+    <p class="intro">Le dauphin de Saint-Jean-de-Luz est en fait une dauphine&nbsp;: une jeune femelle grand dauphin qui vit dans la baie de Saint-Jean-de-Luz et Ciboure depuis l'automne&nbsp;2025. On l'a surnommée Pomme.</p>
   </header>
 
   <figure class="illustration">
-    <img src="illustration.jpg" width="1000" height="1518" alt="Illustration : un dauphin vu d'en haut, à travers les reflets de l'eau de la baie">
+    <picture>
+      <source srcset="illustration.webp" type="image/webp">
+      <img src="illustration.jpg" width="1000" height="1518" alt="Illustration de Pomme, le dauphin de Saint-Jean-de-Luz, vue d'en haut à travers les reflets de la baie" loading="lazy" decoding="async">
+    </picture>
   </figure>
 
-  <section>
-    <h2>Qui est Pomme&nbsp;?</h2>
-    <p>À l'automne 2025, une jeune femelle grand dauphin s'est installée dans la baie de Saint-Jean-de-Luz et Ciboure. Les habitants l'ont surnommée Pomme.</p>
-    <p>Elle mesure environ deux mètres et pèse près de 200&nbsp;kilos. Il est très rare qu'un grand dauphin vive seul, aussi près des côtes&nbsp;: depuis son arrivée, elle est devenue une figure de la baie.</p>
+  <section id="nouvelles">
+    <h2>Dernières nouvelles de Pomme</h2>
+    <p class="date">Mis à jour le <time datetime="2026-11-24">24 novembre 2026</time></p>
+    <p>En novembre, un abcès a été repéré sur son flanc droit, juste sous l'aileron. D'après les observations du 16&nbsp;novembre, il s'est ouvert, ce qui permet à l'infection de s'évacuer. Son comportement ne montre aucun signe d'affaiblissement.</p>
+    <p>Elle est observée chaque jour par les agents de la ville et par la correspondante du Réseau national échouages, coordonné par l'observatoire Pelagis.</p>
   </section>
 
-  <section>
-    <h2>L'observer sans la déranger</h2>
-    <p>Pomme est un animal sauvage et protégé. Pour sa sécurité comme pour la vôtre, il est interdit de&nbsp;:</p>
+  <section id="qui-est-pomme">
+    <h2>Qui est Pomme&nbsp;?</h2>
+    <p>Pomme est un grand dauphin (<i>Tursiops truncatus</i>), une espèce emblématique de la côte basque. C'est une jeune femelle de 5 à 8&nbsp;ans, pas encore adulte. Elle mesure environ 2&nbsp;mètres et pèse près de 200&nbsp;kilos.</p>
+    <p>Arrivée dans la baie à l'automne 2025, elle y vit seule, ce qui est rare chez une espèce qui vit d'ordinaire en groupe. Curieuse, elle s'approche parfois des nageurs, près de la plage.</p>
+  </section>
+
+  <section id="ou-voir-le-dauphin">
+    <h2>Où voir le dauphin à Saint-Jean-de-Luz&nbsp;?</h2>
+    <p>Pomme évolue dans la baie, entre Saint-Jean-de-Luz et Ciboure, et passe souvent près de la Grande Plage. Le meilleur poste d'observation reste le rivage&nbsp;: depuis la promenade du front de mer, la vue sur la baie est dégagée.</p>
+    <p>Inutile d'aller à sa rencontre en paddle, en kayak ou à la nage&nbsp;: c'est interdit, et les contacts répétés avec l'homme modifient son comportement sauvage et réduisent ses chances de survie.</p>
+  </section>
+
+  <section id="regles">
+    <h2>Les règles pour l'observer sans la déranger</h2>
+    <p>Le grand dauphin est une espèce protégée, et la baie fait partie d'un espace protégé. L'arrêté ministériel du 1<sup>er</sup>&nbsp;juillet 2011 interdit de&nbsp;:</p>
     <ul>
       <li>s'approcher à moins de 100&nbsp;mètres&nbsp;;</li>
-      <li>nager vers elle ou avec elle&nbsp;;</li>
-      <li>la poursuivre, l'encercler ou lui couper la route&nbsp;;</li>
-      <li>la toucher ou la nourrir.</li>
+      <li>nager avec elle, la poursuivre ou l'encercler&nbsp;;</li>
+      <li>la toucher ou la nourrir&nbsp;;</li>
+      <li>lui couper la route en bateau, ou mettre des personnes à l'eau près d'elle.</li>
     </ul>
-    <p>Le plus beau spectacle se regarde depuis le rivage.</p>
+    <p>L'amende peut atteindre 750&nbsp;€ pour un particulier et 3&nbsp;500&nbsp;€ pour une entreprise.</p>
+    <p>Même quand elle vient d'elle-même vers les nageurs, mieux vaut s'écarter&nbsp;: dans l'eau, un dauphin de 200&nbsp;kilos est bien plus fort et plus rapide que nous. Certaines maladies peuvent aussi se transmettre, dans les deux sens.</p>
   </section>
 
-  <section>
+  <section id="questions">
+    <h2>Questions fréquentes</h2>
+    <h3>Y a-t-il un dauphin à Saint-Jean-de-Luz&nbsp;?</h3>
+    <p>Oui. Depuis l'automne 2025, une jeune femelle grand dauphin surnommée Pomme vit dans la baie de Saint-Jean-de-Luz et Ciboure.</p>
+    <h3>Le dauphin de Saint-Jean-de-Luz est-il un mâle ou une femelle&nbsp;?</h3>
+    <p>C'est une jeune femelle de 5 à 8&nbsp;ans, pas encore adulte, d'où son surnom de dauphine de Saint-Jean-de-Luz.</p>
+    <h3>Peut-on nager avec le dauphin de Saint-Jean-de-Luz&nbsp;?</h3>
+    <p>Non. Le grand dauphin est une espèce protégée&nbsp;: il est interdit de nager avec lui, de le toucher ou de s'en approcher à moins de 100&nbsp;mètres. L'amende peut atteindre 750&nbsp;€ pour un particulier.</p>
+    <h3>Le dauphin de la baie est-il malade&nbsp;?</h3>
+    <p>En novembre 2026, un abcès est apparu sur son flanc droit. Il s'est ouvert le 16&nbsp;novembre, et son comportement ne montre pas de signe d'affaiblissement. Elle est surveillée chaque jour.</p>
+    <h3>Qui contacter si le dauphin semble en difficulté&nbsp;?</h3>
+    <p>La mairie de Saint-Jean-de-Luz, qui assure son suivi avec l'observatoire Pelagis&nbsp;: <a href="tel:+33559516171">05&nbsp;59&nbsp;51&nbsp;61&nbsp;71</a>.</p>
+  </section>
+
+  <section id="pomme-dauphine">
     <h2>Pomme Dauphine</h2>
-    <p>Des vêtements et des affiches dessinés autour de la dauphine de la baie, pour celles et ceux qui l'ont croisée, ou qui aimeraient la croiser.</p>
+    <p>Une petite marque née à Saint-Jean-de-Luz&nbsp;: des vêtements et des affiches dessinés autour de la dauphine de la baie, pour celles et ceux qui l'ont croisée, ou qui aimeraient la croiser. Premières pièces bientôt.</p>
+    <p>On la dessine, on ne l'approche pas&nbsp;: Pomme Dauphine ne propose aucune sortie en mer pour aller la voir.</p>
     <a class="bouton" href="mailto:contact@pommedauphine.fr?subject=Pr%C3%A9venez-moi%20du%20lancement">Être prévenu du lancement</a>
-    <p class="adresse">contact@pommedauphine.fr</p>
+    <p class="adresse">contact@pommedauphine.fr · Instagram&nbsp;: <a href="https://www.instagram.com/pomme_dauphine_officiel/" rel="me">@pomme_dauphine_officiel</a></p>
+  </section>
+
+  <section class="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://www.saintjeandeluz.fr/fr/actualite-sur-la-situation-du-dauphin-femelle-de-la-baie-de-saint-jean-de-luz/">Mairie de Saint-Jean-de-Luz, communiqué de l'observatoire Pelagis, 17&nbsp;novembre 2026</a></li>
+      <li><a href="https://www.saintjeandeluz.fr/fr/un-dauphin-est-present-dans-la-baie-respectons-le/">Mairie de Saint-Jean-de-Luz, «&nbsp;Un dauphin est présent dans la baie, respectons-le&nbsp;!&nbsp;», 4&nbsp;avril 2026</a></li>
+    </ul>
   </section>
 
   <footer>
-    <p>© 2026 Pomme Dauphine · Saint-Jean-de-Luz</p>
+    <p>© 2026 Pomme Dauphine · Saint-Jean-de-Luz · Page mise à jour le 24&nbsp;novembre 2026</p>
     <details>
       <summary>Mentions légales</summary>
       <p>Éditeur&nbsp;: Jérôme Giraud, Saint-Jean-de-Luz. Contact&nbsp;: contact@pommedauphine.fr.</p>
