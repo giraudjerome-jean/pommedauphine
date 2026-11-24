@@ -17,13 +17,12 @@
 <meta property="og:image" content="https://pommedauphine.fr/partage.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Pomme Dauphine, Saint-Jean-de-Luz : logo et illustration d'un dauphin dans la baie">
+<meta property="og:image:alt" content="Affiche Pomme Dauphine, Saint-Jean-de-Luz : la queue d'un dauphin sort des vagues">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#F4EBDC">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23586DAD'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23F4EBDC'%3EP%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,800&display=swap">
+<meta name="theme-color" content="#1D3E8E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231D3E8E'/%3E%3Ccircle cx='46' cy='18' r='7' fill='%23F04E25'/%3E%3Ctext x='30' y='45' font-family='Arial,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='%23FDF0DF'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/fredoka-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,7 +33,7 @@
       "name": "Pomme Dauphine",
       "url": "https://pommedauphine.fr/",
       "logo": "https://pommedauphine.fr/logo.png",
-      "image": "https://pommedauphine.fr/partage.jpg",
+      "image": "https://pommedauphine.fr/affiche.jpg",
       "email": "contact@pommedauphine.fr",
       "sameAs": ["https://www.instagram.com/pomme_dauphine_officiel/"],
       "address": {"@type": "PostalAddress", "addressLocality": "Saint-Jean-de-Luz", "postalCode": "64500", "addressCountry": "FR"}
@@ -54,7 +53,7 @@
       "name": "Dauphin de Saint-Jean-de-Luz : Pomme, la dauphine de la baie",
       "inLanguage": "fr-FR",
       "isPartOf": {"@id": "https://pommedauphine.fr/#site"},
-      "primaryImageOfPage": "https://pommedauphine.fr/partage.jpg",
+      "primaryImageOfPage": "https://pommedauphine.fr/affiche.jpg",
       "dateModified": "2026-11-24",
       "about": {
         "@type": "Thing",
@@ -83,129 +82,234 @@
 }
 </script>
 <style>
-  /* Couleurs et typo modifiables ici */
+  @font-face{font-family:'Fredoka';font-weight:600;font-display:swap;src:url(fonts/fredoka-latin-600-normal.woff2) format('woff2')}
+  @font-face{font-family:'Fredoka';font-weight:700;font-display:swap;src:url(fonts/fredoka-latin-700-normal.woff2) format('woff2')}
+  @font-face{font-family:'DM Sans';font-weight:400;font-display:swap;src:url(fonts/dm-sans-latin-400-normal.woff2) format('woff2')}
+  @font-face{font-family:'DM Sans';font-weight:500;font-display:swap;src:url(fonts/dm-sans-latin-500-normal.woff2) format('woff2')}
+  @font-face{font-family:'DM Sans';font-weight:700;font-display:swap;src:url(fonts/dm-sans-latin-700-normal.woff2) format('woff2')}
+
+  /* Couleurs de l'affiche */
   :root{
-    --fond:#F4EBDC;
-    --logo:#586DAD;
-    --encre:#3F5290;
-    --encre-douce:#4C5E9C;
-    --police:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --creme:#FDF0DF;
+    --bleu:#1D3E8E;
+    --bleu-nuit:#132C6B;
+    --rouge:#F04E25;
+    --titre:'Fredoka','Arial Rounded MT Bold',system-ui,sans-serif;
+    --texte:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
   }
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{margin:0;background:var(--fond);color:var(--encre);font-family:var(--police);font-size:18px;line-height:1.6}
-  .page{max-width:680px;margin:0 auto;padding:56px 24px 40px}
-  .lieu{margin:0 0 48px;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--encre-douce)}
-  .logo{margin:0;line-height:0}
-  .logo img{display:block;width:100%;max-width:560px;height:auto}
-  h1{margin:56px 0 0;font-size:22px;line-height:1.45;font-weight:500;max-width:30ch}
-  .intro{margin:16px 0 0;max-width:36ch}
-  .illustration{margin:48px 0 56px}
-  .illustration img{display:block;width:100%;max-width:480px;height:auto}
-  h2{margin:0 0 12px;font-size:26px;line-height:1.2;font-weight:800}
-  h3{margin:28px 0 6px;font-size:19px;line-height:1.3;font-weight:800}
-  section+section{margin-top:48px}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{margin:0;background:var(--creme);color:var(--bleu);font-family:var(--texte);font-size:18px;line-height:1.6}
+  img{max-width:100%}
+  a{color:inherit;text-underline-offset:3px}
+  .cadre{max-width:720px;margin:0 auto;padding:0 24px}
+
+  /* Étiquette façon « — SAINT-JEAN-DE-LUZ — » */
+  .etiquette{display:flex;align-items:center;justify-content:center;gap:14px;margin:0;font-family:var(--titre);font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+  .etiquette::before,.etiquette::after{content:"";width:30px;height:5px;border-radius:3px;background:var(--rouge);flex:none}
+  .etiquette.gauche{justify-content:flex-start}
+
+  h1,h2,h3{font-family:var(--titre);font-weight:600;line-height:1.12;margin:0}
+  h1{font-size:clamp(34px,7vw,52px);margin-top:40px;text-align:center}
+  h2{font-size:clamp(28px,5vw,38px);margin:14px 0 20px}
+  h3{font-size:21px;margin:0 0 6px}
   p{margin:0 0 14px}
-  ul{margin:0 0 14px;padding-left:1.2em}
-  li{margin-bottom:6px}
-  a{color:inherit}
-  .date{font-size:15px;color:var(--encre-douce)}
-  .bouton{display:inline-block;margin-top:8px;padding:14px 24px;min-height:48px;border-radius:999px;background:var(--encre);color:var(--fond);font-weight:800;text-decoration:none}
-  .bouton:hover,.bouton:focus-visible{background:#2F3F73}
-  .bouton:focus-visible{outline:3px solid var(--encre);outline-offset:3px}
-  .adresse{font-size:15px;color:var(--encre-douce)}
-  .sources{font-size:15px;color:var(--encre-douce)}
-  .sources h2{font-size:18px}
-  footer{margin-top:72px;padding-top:24px;border-top:2px solid var(--encre);font-size:14px;color:var(--encre-douce)}
-  details summary{cursor:pointer;font-weight:500;color:var(--encre)}
+  ul{margin:0 0 14px;padding:0;list-style:none}
+
+  /* Hero */
+  .hero{padding:40px 0 64px;text-align:center}
+  .affiche{display:block;margin:32px auto 0;width:min(100%,460px);height:auto;transform:rotate(-1.5deg)}
+  .intro{max-width:34ch;margin:18px auto 0;font-size:20px}
+  .bouton{display:inline-flex;align-items:center;justify-content:center;min-height:52px;margin-top:22px;padding:14px 28px;border-radius:999px;background:var(--rouge);color:var(--creme);font-family:var(--titre);font-weight:600;font-size:19px;text-decoration:none;transition:transform .15s ease}
+  .bouton:hover{transform:translateY(-2px)}
+  .bouton:focus-visible{outline:3px solid var(--bleu);outline-offset:3px}
+
+  /* Vagues de séparation */
+  .vague{display:block;width:100%;height:56px}
+  .vague path{fill:var(--bleu)}
+
+  /* Bandeaux bleus avec grain */
+  .bleu{position:relative;isolation:isolate;background:var(--bleu);color:var(--creme);padding:40px 0 56px}
+  .bleu::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .99 0 0 0 0 .94 0 0 0 0 .87 0 0 0 2.2 -1.15'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E")}
+  .bleu .etiquette::before,.bleu .etiquette::after{background:var(--rouge)}
+  .bleu a{color:var(--creme)}
+  #nouvelles{padding-top:72px}
+  .soleil{position:absolute;top:20px;right:max(24px,calc(50% - 340px));width:44px;height:44px;border-radius:50%;background:var(--rouge)}
+  .date{display:inline-block;margin:0 0 16px;padding:4px 12px;border-radius:999px;background:var(--creme);color:var(--bleu);font-family:var(--titre);font-weight:600;font-size:15px}
+
+  /* Sections crème */
+  .creme{padding:64px 0}
+  .creme+.creme{padding-top:0}
+
+  /* Chiffres clés */
+  .chiffres{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 24px}
+  .chiffres li{padding:16px 14px;border:2.5px solid var(--bleu);border-radius:18px;text-align:center}
+  .chiffres strong{display:block;font-family:var(--titre);font-weight:600;font-size:30px;line-height:1.1}
+  .chiffres span{font-size:15px}
+  @media (min-width:640px){.chiffres{grid-template-columns:repeat(4,1fr)}}
+
+  /* Règles */
+  .grand{display:flex;align-items:baseline;gap:12px;margin:0 0 18px;font-family:var(--titre);font-weight:700;font-size:clamp(64px,16vw,104px);line-height:1}
+  .grand small{font-family:var(--texte);font-weight:500;font-size:18px;line-height:1.35;max-width:16ch}
+  .regles li{position:relative;padding-left:34px;margin-bottom:10px}
+  .regles li::before{content:"";position:absolute;left:0;top:.72em;width:20px;height:5px;border-radius:3px;background:var(--rouge)}
+  .amende{margin-top:20px;padding:16px 18px;border:2px dashed var(--creme);border-radius:16px}
+
+  /* FAQ */
+  .faq{display:grid;gap:14px}
+  .faq article{padding:20px 22px;border-radius:20px;background:#F6E3CC}
+  .faq p{margin:0}
+
+  /* Timbre (bords dentelés) */
+  .timbre{--r:12px;position:relative;isolation:isolate;margin:8px 0 0;padding:calc(var(--r)*4) calc(var(--r)*3.5);background:var(--bleu);color:var(--creme);text-align:center;
+    -webkit-mask:radial-gradient(var(--r),#0000 98%,#000) round calc(-1.5*var(--r)) calc(-1.5*var(--r))/calc(3*var(--r)) calc(3*var(--r)),linear-gradient(#000 0 0) no-repeat 50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+            mask:radial-gradient(var(--r),#0000 98%,#000) round calc(-1.5*var(--r)) calc(-1.5*var(--r))/calc(3*var(--r)) calc(3*var(--r)),linear-gradient(#000 0 0) no-repeat 50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r))}
+  .timbre::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .99 0 0 0 0 .94 0 0 0 0 .87 0 0 0 2.2 -1.15'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E")}
+  .timbre h2{margin-top:10px}
+  .timbre p{max-width:34ch;margin-left:auto;margin-right:auto}
+  .timbre .bouton{background:var(--creme);color:var(--bleu)}
+  .timbre .bouton:focus-visible{outline-color:var(--creme)}
+  .liens{margin-top:18px;font-size:16px}
+  @media (max-width:520px){.timbre{padding:calc(var(--r)*3.5) calc(var(--r)*2.2)}.timbre .bouton{padding:14px 22px;font-size:18px}.soleil{width:34px;height:34px}}
+
+  .sources{font-size:15px}
+  .sources h2{font-size:20px;margin:0 0 8px}
+  .sources li{margin-bottom:6px}
+  footer{padding:28px 0 40px;font-size:14px}
+  footer .ligne{border-top:2.5px solid var(--bleu);padding-top:22px}
+  details summary{cursor:pointer;font-weight:500}
   details p{margin:10px 0 0}
+
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bouton{transition:none}}
 </style>
 </head>
 <body>
-<main class="page">
-  <p class="lieu">Saint-Jean-de-Luz · Ciboure · Donibane Lohizune</p>
 
-  <header>
-    <p class="logo">
-      <picture>
-        <source srcset="logo.webp" type="image/webp">
-        <img src="logo.png" width="1200" height="811" alt="Pomme Dauphine, Saint-Jean-de-Luz" fetchpriority="high">
-      </picture>
-    </p>
+<header class="hero">
+  <div class="cadre">
+    <p class="etiquette">Saint-Jean-de-Luz · Ciboure</p>
+    <picture>
+      <source type="image/webp" srcset="affiche-480.webp 480w, affiche.webp 916w" sizes="(max-width:520px) calc(100vw - 48px), 460px">
+      <img class="affiche" src="affiche.jpg" width="916" height="1265" alt="Affiche Pomme Dauphine en forme de timbre : la queue orange d'un dauphin sort des vagues de la baie de Saint-Jean-de-Luz" fetchpriority="high">
+    </picture>
     <h1>Pomme, le dauphin de la baie de Saint-Jean-de-Luz</h1>
     <p class="intro">Le dauphin de Saint-Jean-de-Luz est en fait une dauphine&nbsp;: une jeune femelle grand dauphin qui vit dans la baie de Saint-Jean-de-Luz et Ciboure depuis l'automne&nbsp;2025. On l'a surnommée Pomme.</p>
-  </header>
+    <a class="bouton" href="#pomme-dauphine">Être prévenu du lancement</a>
+  </div>
+</header>
 
-  <figure class="illustration">
-    <picture>
-      <source srcset="illustration.webp" type="image/webp">
-      <img src="illustration.jpg" width="1000" height="1518" alt="Illustration de Pomme, le dauphin de Saint-Jean-de-Luz, vue d'en haut à travers les reflets de la baie" loading="lazy" decoding="async">
-    </picture>
-  </figure>
+<main>
+  <svg class="vague" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 180 6 360 6 540 26 S 900 52 1080 30 S 1350 8 1440 22 V56 H0 Z"/></svg>
+  <section class="bleu" id="nouvelles">
+    <span class="soleil" aria-hidden="true"></span>
+    <div class="cadre">
+      <p class="etiquette gauche">Nouvelles de la baie</p>
+      <h2>Dernières nouvelles de Pomme</h2>
+      <p class="date">Mis à jour le <time datetime="2026-11-24">24 novembre 2026</time></p>
+      <p>En novembre, un abcès a été repéré sur son flanc droit, juste sous l'aileron. D'après les observations du 16&nbsp;novembre, il s'est ouvert, ce qui permet à l'infection de s'évacuer. Son comportement ne montre aucun signe d'affaiblissement.</p>
+      <p>Elle est observée chaque jour par les agents de la ville et par la correspondante du Réseau national échouages, coordonné par l'observatoire Pelagis.</p>
+    </div>
+  </section>
+  <svg class="vague" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1440 V24 C 1260 50 1080 50 900 30 S 540 4 360 26 S 90 50 0 34 Z"/></svg>
 
-  <section id="nouvelles">
-    <h2>Dernières nouvelles de Pomme</h2>
-    <p class="date">Mis à jour le <time datetime="2026-11-24">24 novembre 2026</time></p>
-    <p>En novembre, un abcès a été repéré sur son flanc droit, juste sous l'aileron. D'après les observations du 16&nbsp;novembre, il s'est ouvert, ce qui permet à l'infection de s'évacuer. Son comportement ne montre aucun signe d'affaiblissement.</p>
-    <p>Elle est observée chaque jour par les agents de la ville et par la correspondante du Réseau national échouages, coordonné par l'observatoire Pelagis.</p>
+  <section class="creme" id="qui-est-pomme">
+    <div class="cadre">
+      <p class="etiquette gauche">Portrait</p>
+      <h2>Qui est Pomme&nbsp;?</h2>
+      <ul class="chiffres">
+        <li><strong>2&nbsp;m</strong><span>de long environ</span></li>
+        <li><strong>200&nbsp;kg</strong><span>à peu près</span></li>
+        <li><strong>5 à 8&nbsp;ans</strong><span>pas encore adulte</span></li>
+        <li><strong>2025</strong><span>arrivée à l'automne</span></li>
+      </ul>
+      <p>Pomme est un grand dauphin (<i>Tursiops truncatus</i>), une espèce emblématique de la côte basque. C'est une jeune femelle de 5 à 8&nbsp;ans, pas encore adulte. Elle mesure environ 2&nbsp;mètres et pèse près de 200&nbsp;kilos.</p>
+      <p>Arrivée dans la baie à l'automne 2025, elle y vit seule, ce qui est rare chez une espèce qui vit d'ordinaire en groupe. Curieuse, elle s'approche parfois des nageurs, près de la plage.</p>
+    </div>
   </section>
 
-  <section id="qui-est-pomme">
-    <h2>Qui est Pomme&nbsp;?</h2>
-    <p>Pomme est un grand dauphin (<i>Tursiops truncatus</i>), une espèce emblématique de la côte basque. C'est une jeune femelle de 5 à 8&nbsp;ans, pas encore adulte. Elle mesure environ 2&nbsp;mètres et pèse près de 200&nbsp;kilos.</p>
-    <p>Arrivée dans la baie à l'automne 2025, elle y vit seule, ce qui est rare chez une espèce qui vit d'ordinaire en groupe. Curieuse, elle s'approche parfois des nageurs, près de la plage.</p>
+  <section class="creme" id="ou-voir-le-dauphin">
+    <div class="cadre">
+      <p class="etiquette gauche">Depuis le rivage</p>
+      <h2>Où voir le dauphin à Saint-Jean-de-Luz&nbsp;?</h2>
+      <p>Pomme évolue dans la baie, entre Saint-Jean-de-Luz et Ciboure, et passe souvent près de la Grande Plage. Le meilleur poste d'observation reste le rivage&nbsp;: depuis la promenade du front de mer, la vue sur la baie est dégagée.</p>
+      <p>Inutile d'aller à sa rencontre en paddle, en kayak ou à la nage&nbsp;: c'est interdit, et les contacts répétés avec l'homme modifient son comportement sauvage et réduisent ses chances de survie.</p>
+    </div>
   </section>
 
-  <section id="ou-voir-le-dauphin">
-    <h2>Où voir le dauphin à Saint-Jean-de-Luz&nbsp;?</h2>
-    <p>Pomme évolue dans la baie, entre Saint-Jean-de-Luz et Ciboure, et passe souvent près de la Grande Plage. Le meilleur poste d'observation reste le rivage&nbsp;: depuis la promenade du front de mer, la vue sur la baie est dégagée.</p>
-    <p>Inutile d'aller à sa rencontre en paddle, en kayak ou à la nage&nbsp;: c'est interdit, et les contacts répétés avec l'homme modifient son comportement sauvage et réduisent ses chances de survie.</p>
+  <svg class="vague" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C 180 6 360 6 540 26 S 900 52 1080 30 S 1350 8 1440 22 V56 H0 Z"/></svg>
+  <section class="bleu" id="regles">
+    <div class="cadre">
+      <p class="etiquette gauche">La règle d'or</p>
+      <h2>Les règles pour l'observer sans la déranger</h2>
+      <p class="grand">100&nbsp;m <small>de distance minimum, en toutes circonstances</small></p>
+      <p>Le grand dauphin est une espèce protégée, et la baie fait partie d'un espace protégé. L'arrêté ministériel du 1<sup>er</sup>&nbsp;juillet 2011 interdit de&nbsp;:</p>
+      <ul class="regles">
+        <li>s'approcher à moins de 100&nbsp;mètres&nbsp;;</li>
+        <li>nager avec elle, la poursuivre ou l'encercler&nbsp;;</li>
+        <li>la toucher ou la nourrir&nbsp;;</li>
+        <li>lui couper la route en bateau, ou mettre des personnes à l'eau près d'elle.</li>
+      </ul>
+      <p class="amende">L'amende peut atteindre 750&nbsp;€ pour un particulier et 3&nbsp;500&nbsp;€ pour une entreprise.</p>
+      <p>Même quand elle vient d'elle-même vers les nageurs, mieux vaut s'écarter&nbsp;: dans l'eau, un dauphin de 200&nbsp;kilos est bien plus fort et plus rapide que nous. Certaines maladies peuvent aussi se transmettre, dans les deux sens.</p>
+    </div>
+  </section>
+  <svg class="vague" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1440 V24 C 1260 50 1080 50 900 30 S 540 4 360 26 S 90 50 0 34 Z"/></svg>
+
+  <section class="creme" id="questions">
+    <div class="cadre">
+      <p class="etiquette gauche">Vos questions</p>
+      <h2>Questions fréquentes</h2>
+      <div class="faq">
+        <article>
+          <h3>Y a-t-il un dauphin à Saint-Jean-de-Luz&nbsp;?</h3>
+          <p>Oui. Depuis l'automne 2025, une jeune femelle grand dauphin surnommée Pomme vit dans la baie de Saint-Jean-de-Luz et Ciboure.</p>
+        </article>
+        <article>
+          <h3>Le dauphin de Saint-Jean-de-Luz est-il un mâle ou une femelle&nbsp;?</h3>
+          <p>C'est une jeune femelle de 5 à 8&nbsp;ans, pas encore adulte, d'où son surnom de dauphine de Saint-Jean-de-Luz.</p>
+        </article>
+        <article>
+          <h3>Peut-on nager avec le dauphin de Saint-Jean-de-Luz&nbsp;?</h3>
+          <p>Non. Le grand dauphin est une espèce protégée&nbsp;: il est interdit de nager avec lui, de le toucher ou de s'en approcher à moins de 100&nbsp;mètres. L'amende peut atteindre 750&nbsp;€ pour un particulier.</p>
+        </article>
+        <article>
+          <h3>Le dauphin de la baie est-il malade&nbsp;?</h3>
+          <p>En novembre 2026, un abcès est apparu sur son flanc droit. Il s'est ouvert le 16&nbsp;novembre, et son comportement ne montre pas de signe d'affaiblissement. Elle est surveillée chaque jour.</p>
+        </article>
+        <article>
+          <h3>Qui contacter si le dauphin semble en difficulté&nbsp;?</h3>
+          <p>La mairie de Saint-Jean-de-Luz, qui assure son suivi avec l'observatoire Pelagis&nbsp;: <a href="tel:+33559516171">05&nbsp;59&nbsp;51&nbsp;61&nbsp;71</a>.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <section id="regles">
-    <h2>Les règles pour l'observer sans la déranger</h2>
-    <p>Le grand dauphin est une espèce protégée, et la baie fait partie d'un espace protégé. L'arrêté ministériel du 1<sup>er</sup>&nbsp;juillet 2011 interdit de&nbsp;:</p>
-    <ul>
-      <li>s'approcher à moins de 100&nbsp;mètres&nbsp;;</li>
-      <li>nager avec elle, la poursuivre ou l'encercler&nbsp;;</li>
-      <li>la toucher ou la nourrir&nbsp;;</li>
-      <li>lui couper la route en bateau, ou mettre des personnes à l'eau près d'elle.</li>
-    </ul>
-    <p>L'amende peut atteindre 750&nbsp;€ pour un particulier et 3&nbsp;500&nbsp;€ pour une entreprise.</p>
-    <p>Même quand elle vient d'elle-même vers les nageurs, mieux vaut s'écarter&nbsp;: dans l'eau, un dauphin de 200&nbsp;kilos est bien plus fort et plus rapide que nous. Certaines maladies peuvent aussi se transmettre, dans les deux sens.</p>
+  <section class="creme" id="pomme-dauphine">
+    <div class="cadre">
+      <div class="timbre">
+        <p class="etiquette">Saint-Jean-de-Luz</p>
+        <h2>Pomme Dauphine</h2>
+        <p>Une petite marque née à Saint-Jean-de-Luz&nbsp;: des vêtements et des affiches dessinés autour de la dauphine de la baie, pour celles et ceux qui l'ont croisée, ou qui aimeraient la croiser. Premières pièces bientôt.</p>
+        <p>On la dessine, on ne l'approche pas&nbsp;: Pomme Dauphine ne propose aucune sortie en mer pour aller la voir.</p>
+        <a class="bouton" href="mailto:contact@pommedauphine.fr?subject=Pr%C3%A9venez-moi%20du%20lancement">Être prévenu du lancement</a>
+        <p class="liens">contact@pommedauphine.fr<br>Instagram&nbsp;: <a href="https://www.instagram.com/pomme_dauphine_officiel/" rel="me">@pomme_dauphine_officiel</a></p>
+      </div>
+    </div>
   </section>
 
-  <section id="questions">
-    <h2>Questions fréquentes</h2>
-    <h3>Y a-t-il un dauphin à Saint-Jean-de-Luz&nbsp;?</h3>
-    <p>Oui. Depuis l'automne 2025, une jeune femelle grand dauphin surnommée Pomme vit dans la baie de Saint-Jean-de-Luz et Ciboure.</p>
-    <h3>Le dauphin de Saint-Jean-de-Luz est-il un mâle ou une femelle&nbsp;?</h3>
-    <p>C'est une jeune femelle de 5 à 8&nbsp;ans, pas encore adulte, d'où son surnom de dauphine de Saint-Jean-de-Luz.</p>
-    <h3>Peut-on nager avec le dauphin de Saint-Jean-de-Luz&nbsp;?</h3>
-    <p>Non. Le grand dauphin est une espèce protégée&nbsp;: il est interdit de nager avec lui, de le toucher ou de s'en approcher à moins de 100&nbsp;mètres. L'amende peut atteindre 750&nbsp;€ pour un particulier.</p>
-    <h3>Le dauphin de la baie est-il malade&nbsp;?</h3>
-    <p>En novembre 2026, un abcès est apparu sur son flanc droit. Il s'est ouvert le 16&nbsp;novembre, et son comportement ne montre pas de signe d'affaiblissement. Elle est surveillée chaque jour.</p>
-    <h3>Qui contacter si le dauphin semble en difficulté&nbsp;?</h3>
-    <p>La mairie de Saint-Jean-de-Luz, qui assure son suivi avec l'observatoire Pelagis&nbsp;: <a href="tel:+33559516171">05&nbsp;59&nbsp;51&nbsp;61&nbsp;71</a>.</p>
+  <section class="creme sources" aria-labelledby="titre-sources">
+    <div class="cadre">
+      <h2 id="titre-sources">Sources</h2>
+      <ul>
+        <li><a href="https://www.saintjeandeluz.fr/fr/actualite-sur-la-situation-du-dauphin-femelle-de-la-baie-de-saint-jean-de-luz/">Mairie de Saint-Jean-de-Luz, communiqué de l'observatoire Pelagis, 17&nbsp;novembre 2026</a></li>
+        <li><a href="https://www.saintjeandeluz.fr/fr/un-dauphin-est-present-dans-la-baie-respectons-le/">Mairie de Saint-Jean-de-Luz, «&nbsp;Un dauphin est présent dans la baie, respectons-le&nbsp;!&nbsp;», 4&nbsp;avril 2026</a></li>
+      </ul>
+    </div>
   </section>
+</main>
 
-  <section id="pomme-dauphine">
-    <h2>Pomme Dauphine</h2>
-    <p>Une petite marque née à Saint-Jean-de-Luz&nbsp;: des vêtements et des affiches dessinés autour de la dauphine de la baie, pour celles et ceux qui l'ont croisée, ou qui aimeraient la croiser. Premières pièces bientôt.</p>
-    <p>On la dessine, on ne l'approche pas&nbsp;: Pomme Dauphine ne propose aucune sortie en mer pour aller la voir.</p>
-    <a class="bouton" href="mailto:contact@pommedauphine.fr?subject=Pr%C3%A9venez-moi%20du%20lancement">Être prévenu du lancement</a>
-    <p class="adresse">contact@pommedauphine.fr · Instagram&nbsp;: <a href="https://www.instagram.com/pomme_dauphine_officiel/" rel="me">@pomme_dauphine_officiel</a></p>
-  </section>
-
-  <section class="sources">
-    <h2>Sources</h2>
-    <ul>
-      <li><a href="https://www.saintjeandeluz.fr/fr/actualite-sur-la-situation-du-dauphin-femelle-de-la-baie-de-saint-jean-de-luz/">Mairie de Saint-Jean-de-Luz, communiqué de l'observatoire Pelagis, 17&nbsp;novembre 2026</a></li>
-      <li><a href="https://www.saintjeandeluz.fr/fr/un-dauphin-est-present-dans-la-baie-respectons-le/">Mairie de Saint-Jean-de-Luz, «&nbsp;Un dauphin est présent dans la baie, respectons-le&nbsp;!&nbsp;», 4&nbsp;avril 2026</a></li>
-    </ul>
-  </section>
-
-  <footer>
+<footer>
+  <div class="cadre"><div class="ligne">
     <p>© 2026 Pomme Dauphine · Saint-Jean-de-Luz · Page mise à jour le 24&nbsp;novembre 2026</p>
     <details>
       <summary>Mentions légales</summary>
@@ -213,7 +317,8 @@
       <p>Hébergement&nbsp;: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
       <p>Ce site n'utilise ni cookies ni outil de mesure d'audience.</p>
     </details>
-  </footer>
-</main>
+  </div></div>
+</footer>
+
 </body>
 </html>
